@@ -4,11 +4,7 @@ Un alumno aprobó si todas sus notas son mayores o iguales a 4
 */
 
 function aproboNota(nota){
-    var resultado = false;
-    if(nota>4){
-        resultado = true;
-    } 
-    return resultado;
+    return nota>4;
 }
 
 var funcionFlecha = (nota) => nota > 4;
@@ -20,4 +16,4 @@ function aprobo(notas){
 }
 
 
-console.log(aprobo([5,7,7,9]));
+console.log(aprobo([5,5,5,9]));

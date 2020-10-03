@@ -6,16 +6,7 @@ En esta sección debes resolver todo con los métodos forEach, map, some, filter
 */
 
 function algunoEsPar(vector){
-    var x = "No se encontro ningun numero par";
-vector.forEach(
-    element => {
-        if (element%2 == 0 && element != 0){
-           x = "Es par";
-        } 
-    }
-);
-    return x;
-
+    return vector.some((element) => element % 2 == 0);
 }
 
 console.log(algunoEsPar([1,5,2]));

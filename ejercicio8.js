@@ -3,21 +3,20 @@
  */
 
 
-var esPar = (element) => element%2 == 0;
+var esPar = (element) => element % 2 == 0;
 
 
 
 function cuantosCumplen(funcion, vector){
-    var contador = 0;
+    var contador=0;
 
-    for (const iterator of vector) {
-    
-        if(funcion(iterator)){
+    var aux = vector.filter((vector) => {
+        if(funcion(vector)){
             contador++;
         }
-    }    
+    });
 
     return contador;
 }
 
- console.log(cuantosCumplen(esPar, [3,7,22,44,78]));
+ console.log(cuantosCumplen(esPar, [3,7,22,44,78,24]));
